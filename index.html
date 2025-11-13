@@ -1,0 +1,116 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Jacob Miller — GitHub Curriculum</title>
+
+  <!-- Montserrat (user preference) -->
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700;900&display=swap" rel="stylesheet">
+
+  <meta name="description" content="Jacob Miller — Hands-on curriculum built from GitHub repositories. Front-end portfolio with interactive curriculum." />
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Particle canvas -->
+  <canvas id="particleCanvas" class="particle-canvas" aria-hidden="true"></canvas>
+
+  <div class="container">
+    <header class="topbar glass">
+      <div class="brand">
+        <div class="logo">JM</div>
+        <div class="meta">
+          <h1 id="siteTitle">Jacob Miller — GitHub Curriculum</h1>
+          <p class="lead" id="introLine"> <span id="typing"></span></p>
+        </div>
+      </div>
+
+      <div class="controls">
+        <button id="themeToggle" class="btn ghost" aria-label="Toggle theme">🌗</button>
+        <a id="downloadPdf" class="btn primary" href="#" download="Jacob_Miller_GitHub_Curriculum.pdf">Download PDF</a>
+      </div>
+    </header>
+
+    <main class="main-grid">
+      <aside class="sidebar glass" aria-label="Curriculum navigation">
+        <nav>
+          <ul class="nav-list">
+            <li class="nav-item active" data-target="foundation">Foundations</li>
+            <li class="nav-item" data-target="fullstack">Full Stack</li>
+            <li class="nav-item" data-target="security">Security</li>
+            <li class="nav-item" data-target="realestate">Real Estate</li>
+            <li class="nav-item" data-target="blockchain">Blockchain</li>
+            <li class="nav-item" data-target="capstone">Capstone</li>
+          </ul>
+        </nav>
+        <div class="sidebar-foot">
+          <small class="muted">Made with · creative code · portfolio</small>
+        </div>
+      </aside>
+
+      <section class="content glass" id="contentArea">
+        <!-- Sections (populated / toggled by JS) -->
+        <article class="section visible" id="foundation">
+          <div class="section-head">
+            <h2>Foundations</h2>
+            <p class="muted">HTML, CSS, JS basics — refactor, accessibility, deploy.</p>
+          </div>
+          <div class="card-grid" id="foundationGrid"></div>
+        </article>
+
+        <article class="section" id="fullstack">
+          <div class="section-head">
+            <h2>Full Stack</h2>
+            <p class="muted">APIs, DB design, auth, and deployment (front-end mapping shown).</p>
+          </div>
+          <div class="card-grid" id="fullstackGrid"></div>
+        </article>
+
+        <article class="section" id="security">
+          <div class="section-head">
+            <h2>Security</h2>
+            <p class="muted">Threat modeling, RBAC, secrets, CI security pipelines.</p>
+          </div>
+          <div class="card-grid" id="securityGrid"></div>
+        </article>
+
+        <article class="section" id="realestate">
+          <div class="section-head">
+            <h2>Real Estate</h2>
+            <p class="muted">Tenant portals, lease automation, analytics for properties.</p>
+          </div>
+          <div class="card-grid" id="realestateGrid"></div>
+        </article>
+
+        <article class="section" id="blockchain">
+          <div class="section-head">
+            <h2>Blockchain</h2>
+            <p class="muted">Ledgers, tokenization and art minting experiments.</p>
+          </div>
+          <div class="card-grid" id="blockchainGrid"></div>
+        </article>
+
+        <article class="section" id="capstone">
+          <div class="section-head">
+            <h2>Capstone</h2>
+            <p class="muted">“Secure Property Platform” — full integration & showcase.</p>
+          </div>
+          <div class="card-grid" id="capstoneGrid"></div>
+        </article>
+
+      </section>
+    </main>
+
+    <footer class="footer glass">
+      <div class="f-left">
+        <small class="muted">Jacob Miller · Tucson, AZ</small>
+      </div>
+      <div class="f-right">
+        <small class="muted">Built for GitHub Pages — static, deploy-ready</small>
+      </div>
+    </footer>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
